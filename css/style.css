@@ -1,0 +1,46 @@
+.inputTextWindow {
+	width: 500px;
+}
+
+.wrapper {
+	border-radius: 5px;
+    background-color: #515151;
+    padding: 20px;
+    width: 565px;
+    margin: 2%;
+    box-shadow: 15px 15px 30px grey;
+}
+
+
+.wrapper input {
+	margin: 2px;
+	margin-bottom: 10px;
+
+}
+
+.wrapper button {
+	margin-left: 170px;
+	margin-top: 10px;
+}
+
+.processedWrapper{
+	border-radius: 5px;
+    background-color: #515151;
+    padding: 20px;
+    width: 90%;
+    margin: 2%;
+    box-shadow: 15px 15px 30px grey;
+}
+
+.processedWrapper .form-inline {
+	margin: 10px;
+}
+
+body{
+	background-color: #cecece;
+}
+
+#tagBullet {
+	width: 159px;
+	text-align: left;
+}

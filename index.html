@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<script src="js/script.js"></script>
+
+    <title>Git commands</title>
+</head>
+
+<body>
+
+<div class="wrapper">
+	<input type="text" class="form-control inputTextWindow" id="fileNames" placeholder="Filenames separated with a space">
+	<input type="text" class="form-control inputTextWindow" id="commitMessage" placeholder="Commit Messsage">
+	<input type="text" class="form-control inputTextWindow" id="branchName" placeholder="Branch Name">
+	<button id="generateGitCommands" type="button" class="btn btn-success">Generate Git Commands</button>
+</div>
+
+<div class="processedWrapper">
+	<form class="form-inline">
+			<div class="form-group">
+				<div class="input-group">
+					<div id="tagBullet" class="input-group-addon">Git-add command</div>
+					<p id="gitAddCmd" class="form-control"></p>
+				</div>
+			</div>
+	<button type="button" onclick="copyToClipboard('#gitAddCmd')" class="btn btn-primary" class="copyBtn">Copy</button>
+	</form>
+
+	<form class="form-inline">
+			<div class="form-group">
+				<div class="input-group">
+					<div id="tagBullet" class="input-group-addon">Git-commit command</div>
+					<p id="gitCommitCmd" class="form-control"></p>
+				</div>
+			</div>
+	<button type="button" onclick="copyToClipboard('#gitCommitCmd')" class="btn btn-primary">Copy</button>
+	</form>
+
+	<form class="form-inline">
+			<div class="form-group">
+				<div class="input-group">
+					<div id="tagBullet" class="input-group-addon">Git-push command</div>
+					<p id="gitPushCmd" class="form-control"></p>
+				</div>
+			</div>
+	<button type="button" onclick="copyToClipboard('#gitPushCmd')" class="btn btn-primary">Copy</button>
+	</form>
+
+	<form class="form-inline">
+			<div class="form-group">
+				<div class="input-group">
+					<div id="tagBullet" class="input-group-addon widthClass">Create-tag command</div>
+					<p id="createTagCmd" class="form-control"></p>
+				</div>
+			</div>
+	<button type="button" onclick="copyToClipboard('#createTagCmd')" class="btn btn-primary">Copy</button>
+	</form>
+
+	<form class="form-inline">
+			<div class="form-group">
+				<div class="input-group">
+					<div id="tagBullet" class="input-group-addon">Push-tag command</div>
+					<p id="pushTagCmd" class="form-control"></p>
+				</div>
+			</div>
+	<button type="button" onclick="copyToClipboard('#pushTagCmd')" class="btn btn-primary">Copy</button>
+	</form>
+</div>
+
+</body>
+</html>
