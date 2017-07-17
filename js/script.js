@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 		var tagName = year.toString()+month.toString()+date.toString() 
 						+ "_"
-						+ "TAG-NAME"
+						+ "TAG"
 						+ "_rc-01";
 
 		var createTagCmd = "git tag -a " + tagName + " origin/" + $('#branchName').val() + " -m " + '"'+ $('#commitMessage').val() + '"';
