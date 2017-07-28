@@ -44,3 +44,7 @@ body{
 	width: 159px;
 	text-align: left;
 }
+
+.input-group p {
+	width: 930px;
+}
