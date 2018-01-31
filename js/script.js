@@ -1,6 +1,14 @@
 $(document).ready(function(){
 
+	$("#mainInfo").hide();
+
+	$("#infoBtn").click(function(){
+    	$("#mainInfo").toggle();
+    });
+
     $("#generateGitCommands").click(function(){
+
+
 
 		var gitAddCmd = 'git add ' + $('#fileNames').val();
 		$("#gitAddCmd").text(gitAddCmd);

@@ -2,13 +2,23 @@
 	width: 500px;
 }
 
+#bulb{
+	margin-left: 650px;
+    position: fixed;
+}
+
+img{
+	height: 20px;
+	width: 20px;
+}
+
 .wrapper {
 	border-radius: 5px;
-    background-color: #515151;
+    background-color: #ffffff;
     padding: 20px;
     width: 565px;
     margin: 2%;
-    box-shadow: 15px 15px 30px grey;
+    box-shadow: 0px 0px 50px #bbbbbb;
 }
 
 
@@ -25,11 +35,11 @@
 
 .processedWrapper{
 	border-radius: 5px;
-    background-color: #515151;
+    background-color: #ffffff;
     padding: 20px;
     width: 90%;
     margin: 2%;
-    box-shadow: 15px 15px 30px grey;
+    box-shadow: 0px 0px 50px #bbbbbb;
 }
 
 .processedWrapper .form-inline {
