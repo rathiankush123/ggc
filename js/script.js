@@ -8,8 +8,6 @@ $(document).ready(function(){
 
     $("#generateGitCommands").click(function(){
 
-
-
 		var gitAddCmd = 'git add ' + $('#fileNames').val();
 		$("#gitAddCmd").text(gitAddCmd);
 		var gitCommitCmd = 'git commit -m ' + '"' + $('#commitMessage').val() + '"';
@@ -51,4 +49,5 @@ function copyToClipboard(element) {
 	$temp.val($(element).text()).select();
 	document.execCommand("copy");
 	$temp.remove();
+	alert('Copied!');
 }

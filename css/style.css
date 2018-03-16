@@ -5,49 +5,52 @@
 #bulb{
 	margin-left: 650px;
     position: fixed;
+    border-radius: 100px;
+    padding: 8px;
+    border: dashed 3px #101010;
 }
 
-img{
-	height: 20px;
-	width: 20px;
+#bulb img{
+	height: 30px;
+	width: 30px;
 }
 
 .wrapper {
 	border-radius: 5px;
-    background-color: #ffffff;
     padding: 20px;
     width: 565px;
     margin: 2%;
-    box-shadow: 0px 0px 50px #bbbbbb;
+    background-color: #fff;
+    margin-left: 50px;
+}
+
+body{
+	background-color: #4d4d4d;
 }
 
 
 .wrapper input {
 	margin: 2px;
 	margin-bottom: 10px;
-
 }
 
+#basic-addon1{
+	width: 180px;
+	text-align: left;
+}
 .wrapper button {
-	margin-left: 170px;
-	margin-top: 10px;
+	margin-left: 30%; 
 }
 
 .processedWrapper{
 	border-radius: 5px;
-    background-color: #ffffff;
     padding: 20px;
     width: 90%;
     margin: 2%;
-    box-shadow: 0px 0px 50px #bbbbbb;
 }
 
 .processedWrapper .form-inline {
 	margin: 10px;
-}
-
-body{
-	background-color: #cecece;
 }
 
 #tagBullet {
