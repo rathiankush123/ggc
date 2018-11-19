@@ -8,6 +8,16 @@ $(document).ready(function(){
 
     $("#generateGitCommands").click(function(){
 
+    	var tagName = $('#tagName').val();
+
+    	if(tagName.indexOf(' ') >= 0){
+    		alert("Tag name cannot have a space.");
+    		return false;
+    	}else if(tagName.length == 0){
+    		tagName = "TAG";
+    	}
+
+
 		var gitAddCmd = 'git add ' + $('#fileNames').val();
 		$("#gitAddCmd").text(gitAddCmd);
 		var gitCommitCmd = 'git commit -m ' + '"' + $('#commitMessage').val() + '"';
@@ -29,8 +39,9 @@ $(document).ready(function(){
 
 		var tagName = year.toString()+month.toString()+date.toString() 
 						+ "_"
-						+ "TAG"
-						+ "_rc-01";
+						+ tagName
+						+ "_rc-"
+						+ $('#rcNum').val();
 
 		var createTagCmd = "git tag -a " + tagName + " origin/" + $('#branchName').val() + " -m " + '"'+ $('#commitMessage').val() + '"';
 		$("#createTagCmd").text(createTagCmd);

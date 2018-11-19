@@ -7,7 +7,6 @@
     position: fixed;
     border-radius: 100px;
     padding: 8px;
-    border: dashed 3px #101010;
 }
 
 #bulb img{
@@ -60,4 +59,15 @@ body{
 
 .input-group p {
 	width: 930px;
+}
+
+#tagName{
+	width:350px;
+	float:left;
+}
+
+#rcNum{
+	width:138px;
+	float:left;
+	margin-left: 10px;
 }
